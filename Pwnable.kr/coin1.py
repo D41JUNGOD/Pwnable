@@ -8,9 +8,7 @@ print s.recv(2048)
 sleep(3)
 i = 1
 while i<=1:
-    tmp = s.recv(1024)
-    n = tmp[tmp.find("N=")+2:tmp.find(" ")]
-    c = tmp[tmp.find("C=")+2:tmp.find("  ")]
+    n= s.recvuntil("N=")
     j=1
     count = int(c)
     low = 0
