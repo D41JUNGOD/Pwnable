@@ -1,8 +1,5 @@
 from pwn import *
-from struct import *
 from time import *
-
-p = lambda x: pack("<L", x)
 
 s = remote("pwnable.kr",9007)
 
